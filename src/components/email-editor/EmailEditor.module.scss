@@ -1,0 +1,80 @@
+.preview {
+	margin-bottom: 1rem;
+	overflow: hidden;
+	border: 1px solid #2e2e2e;
+	padding: 0.5rem;
+}
+
+.card {
+	background-color: rgba(0, 0, 0, 0.4);
+	border-radius: 10px;
+	overflow: hidden;
+	border: 1px solid #2e2e2e;
+
+	.editor {
+		padding: 0.6rem;
+		padding-bottom: 1.5rem;
+		display: block;
+		color: #fff;
+		width: calc(100% - 1.2rem);
+		min-height: 160px;
+		border: none;
+		outline: none;
+		background: transparent;
+		text-align: left;
+		text-wrap: pretty;
+		resize: none;
+	}
+
+	.actions {
+		background-color: rgba(255, 255, 255, 0.05);
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		padding: 0.3rem 1.2rem;
+
+		.tools {
+			> button {
+				margin-right: -0.4rem;
+				background-color: transparent;
+				border: 0;
+				color: #fff;
+
+				cursor: pointer;
+				transition: all 0.4s ease-in-out;
+
+				&:hover {
+					color: burlywood;
+				}
+				&:not(:last-child) {
+					margin-right: 0.1rem;
+				}
+			}
+		}
+
+		> button {
+			border-radius: 8px;
+			border: 1px solid transparent;
+			color: #fff;
+			padding: 0.6em 1.2em;
+			font-size: 1em;
+			font-weight: 500;
+			font-family: inherit;
+			background-color: #1a1a1a;
+			cursor: pointer;
+			transition: border-color 0.4s;
+
+			&:hover {
+				border-color: #646cff;
+			}
+			&:focus,
+			&:focus-visible {
+				outline: 4px auto -webkit-focus-ring-color;
+			}
+		}
+	}
+}
+
+.read-the-docs {
+	color: #888;
+}
